@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="index.html">
+    <title>cyborg</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/cyborg.css">
+    <link rel="stylesheet" href="cyborg.css" />
+  </head>
+  <body class="bg-gray-900 min-h-screen">
+    <!--header-->
+    <header class="mx-auto lg:bg-gray-900 bg-slate-300">
+      <section
+        class="mx-auto max-w-3xl lg:max-w-6xl flex justify-between p-4 items-center"
+      >
+        <div
+          class="text-rose-900 text-3xl relative after:absolute after:contents-[''] after:-right-4 after:top-0 after:h-full after:w-px after:bg-gray-800"
+        >
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div id="hamburger" class="hamburger lg:hidden w-8 h-full block">
+          <div class="bg-rose-500 h-1 my-1.5 w-2/3 rounded"></div>
+          <div class="bg-rose-500 h-1 my-1.5 w-full rounded"></div>
+          <div class="bg-rose-500 h-1 my-1.5 w-2/3 rounded"></div>
+        </div>
+        <div class="relative lg:flex hidden">
+          <input
+            type="text"
+            placeholder="Search"
+            class="relative rounded-full bg-gray-800 placeholder:text-gray-600 pl-9 py-2 text-lg border-none text-rose-300/80"
+          />
+
+          <i
+            class="bi bi-search search text-lg font-bold text-gray-600 absolute top-2 left-2"
+          ></i>
+        </div>
+        <nav class="bg-slate-200 lg:bg-gray-900 flex-col text-gray-600 lg:flex">
+          <ul class="flex space-x-10">
+            <li class="px-3 py-2.5 hover:text-rose-500 transition-all"><a href="index.html">Home</a></li>
+            <li
+              class="px-3 hover:text-rose-500 transition-all py-2.5 cursor-pointer  active"
+            >
+              <a href="browse.html">Browse</a>
+            </li>
+            <li
+              class="px-3 hover:text-rose-500 transition-all py-2.5 cursor-pointer"
+            >
+              <a href="detali.html">Detail</a>
+            </li>
+            <li
+              class="px-3 hover:text-rose-500 transition-all py-2.5 cursor-pointer"
+            >
+              <a href="stream.html">Streams</a>
+            </li>
+            <li
+              class="lg:bg-gray-700 pl-5 pr-2.5 py-2 rounded-3xl cursor-pointer hover:text-rose-500 lg:hover:text-white lg:text-white lg:hover:bg-rose-400 transition-all"
+            >
+              <a href="profile.html"
+                >profile
+                <img
+                  class="hidden lg:inline-block rounded-full w-7 ml-1"
+                  src="images/profile-header.jpg"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <!--header-->
+    <!--section browse-->
+    <section
+      id="browse"
+      class="mt-10 container mx-auto lg:max-w-6xl bg-slate-800 rounded-3xl px-3 py-7 lg:p-10"
+    >
+    <div class="grid grid-cols-6 gap-x-6  ">
+    <div class="bg-gray-900 sm:p-4  p-7 rounded-3xl lg:col-span-4 mb-5 lg:mb-0  col-span-6">
+      <h1 class="text-xl lg:text-3xl font-bold text-rose-500 inline-block">
+        <em class="underline text-white not-italic decoration-3"
+          >Featured </em
+        >
+        Games
+      </h1>
+
+      <div class="wrapper ">
+        <div class="buttons inline-block text-xl -mt-6  float-right mb-5 ">
+          <i id="left" class="fa-solid fa-angle-left transition duration-300 text-slate-500 hover:text-rose-400"></i>
+          <i id="right" class="fa-solid fa-angle-right transition duration-300 text-slate-500 hover:text-rose-400"></i>
+        </div>
+        <div class="carousel  relative">
+         <div class="inline-block item">
+          <div class="relative   stream overflow-hidden">
+            <img src="images/featured-01.jpg" class="rounded-2xl w-full">
+            <span class="absolute transition duration-300 -bottom-10 left-5 text-rose-500 bg-slate-900 px-4 py-1 font-bold rounded-2xl">2.4K streamers</span>
+          </div>
+          <h4 class="inline-block text-white font-bold text-base mt-6">
+            CS-GO
+            <br />
+            <span class="text-gray-600 font-normal text-base">249K Downloads</span>
+          </h4>
+          <ul class="inline-block float-right mt-6 text-white font-bold">
+            <li class="text-right text-sm mb-1">
+              <i class="bi bi-star-fill text-yellow-400"></i> 4.8
+            </li>
+            <li class="text-right text-sm mt-1">
+              <i class="fa-solid fa-download text-rose-400"></i> 2.3M
+            </li>
+          </ul>
+         </div>
+         <div class="inline-block item">
+          <div class="relative   stream overflow-hidden">
+            <img src="images/featured-02.jpg" class="rounded-2xl w-full">
+            <span class="absolute transition duration-300 -bottom-10 left-5 text-rose-500 bg-slate-900 px-4 py-1 font-bold rounded-2xl">2.4K streamers</span>
+          </div>
+          <h4 class="inline-block text-white font-bold text-base mt-6">
+           Gamezer
+            <br />
+            <span class="text-gray-600 font-normal text-base">249K Downloads</span>
+          </h4>
+          <ul class="inline-block float-right mt-6 text-white font-bold">
+            <li class="text-right text-sm mb-1">
+              <i class="bi bi-star-fill text-yellow-400"></i> 4.8
+            </li>
+            <li class="text-right text-sm mt-1">
+              <i class="fa-solid fa-download text-rose-400"></i> 2.3M
+            </li>
+          </ul>
+         </div>
+         <div class="inline-block item">
+          <div class="relative   stream overflow-hidden">
+            <img src="images/featured-03.jpg" class="rounded-2xl w-full">
+            <span class="absolute transition duration-300 -bottom-10 left-5 text-rose-500 bg-slate-900 px-4 py-1 font-bold rounded-2xl">2.4K streamers</span>
+          </div>
+          <h4 class="inline-block text-white font-bold text-base mt-6">
+           Island Rusty
+            <br />
+            <span class="text-gray-600 font-normal text-base">249K Downloads</span>
+          </h4>
+          <ul class="inline-block float-right mt-6 text-white font-bold">
+            <li class="text-right text-sm mb-1">
+              <i class="bi bi-star-fill text-yellow-400"></i> 4.8
+            </li>
+            <li class="text-right text-sm mt-1">
+              <i class="fa-solid fa-download text-rose-400"></i> 2.3M
+            </li>
+          </ul>
+         </div>
+         <div class="inline-block item">
+          <div class="relative   stream overflow-hidden">
+            <img src="images/featured-02.jpg" class="rounded-2xl w-full">
+            <span class="absolute transition duration-300 -bottom-10 left-5 text-rose-500 bg-slate-900 px-4 py-1 font-bold rounded-2xl">2.4K streamers</span>
+          </div>
+          <h4 class="inline-block text-white font-bold text-base mt-6">
+           Resident Evil
+            <br />
+            <span class="text-gray-600 font-normal text-base">249K Downloads</span>
+          </h4>
+          <ul class="inline-block float-right mt-6 text-white font-bold">
+            <li class="text-right text-sm mb-1">
+              <i class="bi bi-star-fill text-yellow-400"></i> 4.8
+            </li>
+            <li class="text-right text-sm mt-1">
+              <i class="fa-solid fa-download text-rose-400"></i> 2.3M
+            </li>
+          </ul>
+         </div>
+         <div class="inline-block item">
+          <div class="relative   stream overflow-hidden">
+            <img src="images/featured-01.jpg" class="rounded-2xl w-full">
+            <span class="absolute transition duration-300 -bottom-10 left-5 text-rose-500 bg-slate-900 px-4 py-1 font-bold rounded-2xl">2.4K streamers</span>
+          </div>
+          <h4 class="inline-block text-white font-bold text-base mt-6">
+           Red dead
+            <br />
+            <span class="text-gray-600 font-normal text-base">249K Downloads</span>
+          </h4>
+          <ul class="inline-block float-right mt-6 text-white font-bold">
+            <li class="text-right text-sm mb-1">
+              <i class="bi bi-star-fill text-yellow-400"></i> 4.8
+            </li>
+            <li class="text-right text-sm mt-1">
+              <i class="fa-solid fa-download text-rose-400"></i> 2.3M
+            </li>
+          </ul>
+         </div>
+         <div class="inline-block item">
+          <div class="relative   stream overflow-hidden">
+            <img src="images/featured-03.jpg" class="rounded-2xl w-full">
+            <span class="absolute transition duration-300 -bottom-10 left-5 text-rose-500 bg-slate-900 px-4 py-1 font-bold rounded-2xl">2.4K streamers</span>
+          </div>
+          <h4 class="inline-block text-white font-bold text-base mt-6">
+           Mortal Combat
+            <br />
+            <span class="text-gray-600 font-normal text-base">249K Downloads</span>
+          </h4>
+          <ul class="inline-block float-right mt-6 text-white font-bold">
+            <li class="text-right text-sm mb-1">
+              <i class="bi bi-star-fill text-yellow-400"></i> 4.8
+            </li>
+            <li class="text-right text-sm mt-1">
+              <i class="fa-solid fa-download text-rose-400"></i> 2.3M
+            </li>
+          </ul>
+         </div>
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="bg-gray-900 sm:p-4 p-7 rounded-3xl lg:col-span-2 col-span-6 ">
+      <h1 class="text-xl lg:text-3xl font-bold text-rose-500 inline-block">
+        <em class="underline text-white not-italic decoration-3"
+          >Top </em
+        >
+        Downloads
+      </h1>
+      
+       <ul class=" mt-10 ">
+        <li class="flex  border-b border-b-gray-500/25 pb-8 mb-8 relative">
+          <img src="images/game-01.jpg" class="rounded-2xl w-20 ">
+          <div class=" ml-3">
+            <h4 class="inline-block text-white font-bold text-base  mb-2">
+              Fortnite
+            </h4>
+              <span class="text-gray-600 font-normal text-base block mb-2">Sand Box</span>
+              <span class="text-white">4.9 <i class="fa-solid fa-star text-yellow-500"></i></span>
+              <span class="text-white">2.2M <i class="fa-solid fa-download text-rose-500"></i></span>
+              <div class="">
+                
+             <a href=""><i class="fa-solid fa-download text-rose-500  absolute sm:top-1 sm:right-0 right-0 top-1 w-7 h-7 lh-28 text-center bg-slate-700/50 rounded-full text-sm"></i></a></div>
+                </div>
+        </li>
+        <li class="flex  border-b border-b-gray-500/25 pb-8 mb-8 relative">
+          <img src="images/game-02.jpg" class="rounded-2xl w-20 ">
+          <div class=" ml-3">
+            <h4 class="inline-block text-white font-bold text-base  mb-2">
+              CS-GO
+            </h4>
+              <span class="text-gray-600 font-normal text-base block mb-2">Legendary</span>
+              <span class="text-white">4.9 <i class="fa-solid fa-star text-yellow-500"></i></span>
+              <span class="text-white">2.2M <i class="fa-solid fa-download text-rose-500"></i></span>
+              <div class="">
+                <a href=""><i class="fa-solid fa-download text-rose-500  absolute sm:top-1 sm:right-0 right-0 top-1 w-7 h-7 lh-28 text-center bg-slate-700/50 rounded-full text-sm"></i></a>
+              </div>
+        </li>
+        <li class="flex  border-b border-b-gray-500/25 pb-6 mb-6 relative">
+          <img src="images/game-03.jpg" class="rounded-2xl w-20 ">
+          <div class=" ml-3">
+            <h4 class="inline-block text-white font-bold text-base  mb-62">
+              PubG
+            </h4>
+              <span class="text-gray-600 font-normal text-base block mb-2">Battle Royal</span>
+              <span class="text-white">4.9 <i class="fa-solid fa-star text-yellow-500"></i></span>
+              <span class="text-white">2.2M <i class="fa-solid fa-download text-rose-500"></i></span>
+              <div class="">
+                <a href=""><i class="fa-solid fa-download text-rose-500  absolute sm:top-1 sm:right-0 right-0 top-1 w-7 h-7 lh-28 text-center bg-slate-700/50 rounded-full text-sm"></i></a>
+              </div>
+        </li>
+       </ul>
+        <a href="profile.html" class="games overflow-hidden relative z-20  hover:text-white transition duration-500 text-rose-400 text-xl font-bold px-8 py-2 bg-slate-800 rounded-3xl text-center w-fit block mx-auto">View All Games</a>
+    </div>
+  </div>
+  <h1 class="text-xl lg:text-4xl text-center my-12 font-bold text-rose-500 ">
+    <em class="underline text-white not-italic decoration-3"
+      >How To Start Your </em
+    >
+    Live Stream
+  </h1>
+
+  <div class="grid grid-cols-3 w-full sm:p-4 p-7 gap-6">
+    <div class="transition duration-300 hover:-translate-y-5 hover:scale-105 col-span-3 lg:col-span-1 border border-gray-500 rounded-2xl p-7 mb-3">
+      <img src="images/service-01.jpg" class="rounded-full block">
+      <h4 class="text-white text-xl font-bold my-3">Go To Your Profile</h4>
+      <p class="text-gray-500 text-sm md:text-base lg:text-lg">Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.</p>
+    </div>
+    <div class="transition duration-300 hover:-translate-y-5 hover:scale-105 col-span-3 lg:col-span-1 border border-gray-500 rounded-2xl p-7 mb-3">
+      <img src="images/service-02.jpg" class="rounded-full block">
+      <h4 class="text-white text-xl font-bold my-3">Live Stream Button Profile</h4>
+      <p class="text-gray-500  text-sm md:text-base lg:text-lg">If you wish to support us, you can make a <a href="" class="text-gray-300 hover:text-rose-400 transition duration-200"> small contribution via PayPal </a>to info [at] templatemo.com</p>
+    </div>
+    <div class="transition duration-300 hover:-translate-y-5 hover:scale-105 col-span-3 lg:col-span-1 border border-gray-500 rounded-2xl p-7 mb-3">
+      <img src="images/service-03.jpg" class="rounded-full block">
+      <h4 class="text-white text-xl font-bold my-3">You Are Live</h4>
+      <p class="text-gray-500  text-sm md:text-base lg:text-lg">You are not allowed to redistribute this template's downloadable ZIP file on any other template collection website.</p>
+    </div>
+  </div>
+  <a href="profile.html" class="profile hover:text-rose-400 overflow-hidden  relative transition duration-500 my-3 text-white bg-rose-500 text-lg lg:text-xl font-bold px-7  py-2 rounded-full w-fit block mx-auto mb-6">Go To Profile</a>
+  <div class="bg-gray-900 sm:p-4 p-7 rounded-3xl ">
+    <h1 class="text-rose-400 text-4xl font-bold"><em class="not-italic text-white underline  decoration-2">Most Popular</em> Live Stream</h1>
+    
+      <div class="grid grid-cols-4 gap-6 mt-8 pb-16">
+      <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="relative live-show ">
+          <img src="images/stream-01.jpg" class="rounded-2xl w-full">
+          <div class="live opacity-0  transition duration-300">
+            <span class="absolute top-3 right-3 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm">Live</span>
+            <span class="absolute bottom-3 left-6 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm"><i class="fa-solid fa-eye"></i> 1.2K</span>
+            <span class="absolute bottom-3 right-6 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm"><i class="fa-solid fa-gamepad"></i> CS-GO</span>
+          </div>
+        </div>
+        <div class="flex mt-6 ">
+          <img src="images/avatar-01.jpg" class="rounded-full inline-block h-12">
+           <div class="ml-4 ">
+            <span class=" text-rose-500 block"><i class="fa-solid fa-check bg-rose-500 text-sm inline-block w-5 h-5 lh-20 rounded-full text-center text-white mb-2"></i> KenganC</span>
+            <span class=" md:text-lg sm:text-sm lg:text-xl text-white  font-extrabold   lh-10"> Just Talking With Fans</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="relative live-show ">
+          <img src="images/stream-02.jpg" class="rounded-2xl w-full">
+          <div class="live opacity-0  transition duration-300">
+            <span class="absolute top-3 right-3 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm">Live</span>
+            <span class="absolute bottom-3 left-6 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm"><i class="fa-solid fa-eye"></i> 1.2K</span>
+            <span class="absolute bottom-3 right-6 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm"><i class="fa-solid fa-gamepad"></i> CS-GO</span>
+          </div>
+        </div>
+        <div class="flex mt-6 ">
+          <img src="images/avatar-02.jpg" class="rounded-full inline-block h-12">
+           <div class="ml-4 ">
+            <span class=" text-rose-500 block"><i class="fa-solid fa-check bg-rose-500 text-sm inline-block w-5 h-5 lh-20 rounded-full text-center text-white mb-2"></i> LunaMa</span>
+            <span class=" md:text-lg sm:text-sm lg:text-xl text-white  font-extrabold   lh-10"> CS-GO 36 Hours Live Stream</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="relative live-show ">
+          <img src="images/stream-03.jpg" class="rounded-2xl w-full">
+          <div class="live opacity-0  transition duration-300">
+            <span class="absolute top-3 right-3 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm">Live</span>
+            <span class="absolute bottom-3 left-6 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm"><i class="fa-solid fa-eye"></i> 1.2K</span>
+            <span class="absolute bottom-3 right-6 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm"><i class="fa-solid fa-gamepad"></i> CS-GO</span>
+          </div>
+        </div>
+        <div class="flex mt-6 ">
+          <img src="images/avatar-03.jpg" class="rounded-full inline-block h-12">
+           <div class="ml-4 ">
+            <span class=" text-rose-500 block"><i class="fa-solid fa-check bg-rose-500 text-sm inline-block w-5 h-5 lh-20 rounded-full text-center text-white mb-2"></i> Areluwa</span>
+            <span class=" md:text-lg sm:text-sm lg:text-xl text-white  font-extrabold   lh-10"> Maybe Nathej Allnight Chillin'</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="relative live-show ">
+          <img src="images/stream-04.jpg" class="rounded-2xl w-full">
+          <div class="live opacity-0  transition duration-300">
+            <span class="absolute top-3 right-3 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm">Live</span>
+            <span class="absolute bottom-3 left-6 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm"><i class="fa-solid fa-eye"></i> 1.2K</span>
+            <span class="absolute bottom-3 right-6 text-white bg-rose-500/90 px-3 py-1 rounded-2xl text-sm"><i class="fa-solid fa-gamepad"></i> CS-GO</span>
+          </div>
+        </div>
+        <div class="flex mt-6 ">
+          <img src="images/avatar-04.jpg" class="rounded-full inline-block h-12">
+           <div class="ml-4 ">
+            <span class=" text-rose-500 block"><i class="fa-solid fa-check bg-rose-500 text-sm inline-block w-5 h-5 lh-20 rounded-full text-center text-white mb-2"></i> GangTm</span>
+            <span class=" md:text-lg sm:text-sm lg:text-xl text-white  font-extrabold   lh-10">Live Streaming Till Morning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="text-center -mb-10 ">
+    <a href="stream.html" class="bg-rose-500 text-white px-6 py-3 rounded-full font-semibold  md:text-lg sm:text-sm lg:text-xl transition duration-300 hover:bg-white hover:text-rose-500 ">Discover All Streamers</a>
+  </div>
+  </div>
+</section>
+    <!--section browse-->
+     <!--footer-->
+     <footer class=" p-7 text-center w-full bg-gray-900 text-white md:text-xl">
+      <p>Copyright © 2036 Cyborg Gaming Company. All rights reserved.</p>
+    </footer>
+    <!--footer-->
+    <script src="main.js"></script>
+    <script src="cyborg.js"></script>
+  </body>
+</html>

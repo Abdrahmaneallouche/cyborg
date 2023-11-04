@@ -1,0 +1,217 @@
+header .hamburger div{
+  
+  transition-duration: .5s;
+   transition-delay: 0.1s;
+}
+
+header .hamburger.show div:first-child{
+background-color: black;
+  width: 100%;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  transition-property:rotate(45deg);
+  
+ 
+}
+
+header section .hamburger.show div:nth-child(2){
+  opacity: 0;
+  transition-property: opacity;
+  
+  
+}
+header section .hamburger.show div:last-child{
+  background-color: black;
+  width: 100%;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  transition-property: rotate(-45deg);
+}
+.lh-3rem{
+  line-height: 3rem;
+}
+@media (max-width:1023px) {
+  header section{
+  position: relative;
+}
+header section nav{
+transition-duration:  .5s;
+transition-delay: 0.1s;
+}
+header section nav.show{
+opacity: 1;
+top: 83px;
+z-index: 1000;
+
+}
+header section nav{
+  position: absolute;
+  top: -83px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 80%;
+  border-bottom-right-radius:10px ;
+  border-bottom-left-radius:10px ;
+  opacity: 0;
+}
+header section nav ul{
+  flex-direction: column;
+  text-align: center; 
+
+  
+}
+header section nav ul li{
+  color: black;
+
+}
+
+header section nav ul li:not(:first-child){
+  margin-left: 0!important;
+}
+header section nav ul li:not(:last-child){
+  border-bottom: 1px solid #eee;
+}
+}
+#hero .main-banner{
+  background: url("images/banner-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 380px;
+  border-radius: 24px;
+ 
+}
+.rise{
+   transition: all 0.3s;;
+}
+section .stream:hover .rise{
+  bottom: 16px;
+ 
+}
+.wrapper{
+  max-width:  1300px ;
+}
+
+.wrapper .carousel{
+  overflow: hidden;
+  width:100%;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.stream span{
+  transition: all 0.3s;
+}
+.stream:hover span{
+
+  bottom: 10px;
+}
+.wrapper .carousel .item{
+  width: calc(91% / 3);
+ 
+
+}
+.wrapper .carousel .item:not(:last-of-type){
+   margin:0 9px; 
+}
+@media (max-width:990px) {
+  .wrapper .carousel .item{
+    width: calc(91% / 2);
+  }
+}
+@media (max-width:550px) {
+  .wrapper .carousel .item{
+    width:100% ;
+  }
+}
+.lh-40{
+  line-height: 40px;
+}
+.lh-20{
+  line-height: 22px;
+}
+.lh-30{
+  line-height: 30px;
+}
+.lh-10{
+  line-height: 10px;
+}
+.games{
+  z-index: 200;
+}
+.games::before{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 0;
+  background-color: rgb(232, 80, 105);
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  z-index: -1;
+}
+.games:hover::before{
+  width: 100%;
+}
+.profile::before{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 0;
+  background-color: rgb(17, 24, 39);
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  z-index: -1;
+}
+.profile:hover::before{
+  width: 100%;
+}
+.profile{
+  z-index: 200;
+}
+
+.live-show:hover .live{
+  opacity: 1;
+}
+.lh-2r{
+  line-height: 2.5rem;
+}
+header{
+  transition: 0.3s;
+}
+header.sticky{
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0% 0 20px 20px !important;
+  z-index: 3000;
+  background: rgba(255, 255, 255, 0.71);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+header.sticky nav{
+  background: rgba(255, 255, 255, 0.71);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 3000;
+
+}
+.lh-28{
+  line-height: 28px;
+}

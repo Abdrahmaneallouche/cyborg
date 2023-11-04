@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>cyborg</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="browse.html">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="cyborg.css" />
+  </head>
+  <body class="bg-gray-900 min-h-screen">
+    <!--header-->
+    <header class="mx-auto lg:bg-gray-900 bg-slate-300">
+      <section
+        class="mx-auto max-w-3xl lg:max-w-6xl flex justify-between p-4 items-center"
+      >
+        <div
+          class="text-rose-900 text-3xl relative after:absolute after:contents-[''] after:-right-4 after:top-0 after:h-full after:w-px after:bg-gray-800"
+        >
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div id="hamburger" class="hamburger lg:hidden w-8 h-full block">
+          <div class="bg-rose-500 h-1 my-1.5 w-2/3 rounded"></div>
+          <div class="bg-rose-500 h-1 my-1.5 w-full rounded"></div>
+          <div class="bg-rose-500 h-1 my-1.5 w-2/3 rounded"></div>
+        </div>
+        <div class="relative lg:flex hidden">
+          <input
+            type="text"
+            placeholder="Search"
+            class="relative rounded-full bg-gray-800 placeholder:text-gray-600 pl-9 py-2 text-lg border-none text-rose-300/80"
+          />
+
+          <i
+            class="bi bi-search search text-lg font-bold text-gray-600 absolute top-2 left-2"
+          ></i>
+        </div>
+        <nav class="bg-slate-200 lg:bg-gray-900 flex-col text-gray-600 lg:flex">
+          <ul class="flex space-x-10">
+            <li class="px-3  py-2.5"><a href="index.html">Home</a></li>
+            <li
+              class="px-3 hover:text-rose-500 transition-all py-2.5 cursor-pointer"
+            >
+              <a href="browse.html">Browse</a>
+            </li>
+            <li
+              class="px-3 hover:text-rose-500 transition-all py-2.5 cursor-pointer"
+            >
+              <a href="detali.html">Detail</a>
+            </li>
+            <li
+              class="px-3 hover:text-rose-500 transition-all py-2.5 cursor-pointer"
+            >
+              <a href="stream.html">Streams</a>
+            </li>
+            <li
+              class="lg:bg-gray-700 pl-5 pr-2.5 py-2 rounded-3xl cursor-pointer hover:text-rose-500 lg:hover:text-white lg:text-white lg:hover:bg-rose-400 transition-all"
+            >
+              <a href="profile.html"
+                >profile
+                <img
+                  class="hidden lg:inline-block rounded-full w-7 ml-1"
+                  src="images/profile-header.jpg"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+     <!--header-->
+      <!--section profile-->
+      <section
+      id="browse"
+      class="mt-10 container mx-auto lg:max-w-6xl bg-slate-800 rounded-3xl px-3 py-7 lg:p-10"
+    >
+    <div class="bg-gray-900 p-4 rounded-3xl   ">
+      <div class="grid grid-cols-3 gap-8 border-b-2 border-gray-800 pb-6 mb-8">
+      <div class="col-span-3 lg:col-span-1">
+        <img src="images/profile.jpg" class=" rounded-2xl max-w-full w-full">
+      </div>
+      <div class="col-span-3 lg:col-span-1">
+      <span class="bg-rose-400 text-white px-6 py-2 rounded-full inline-block my-3">Offline</span>
+      <h1 class=" font-bold text-white text-3xl mt-4 mb-8">Alan Smithee</h1>
+      <p class="text-gray-600 text-lg">You Haven't Gone Live yet. Go Live By Touching The Button Below.</p>
+      <a class="border border-rose-500 text-rose-400 hover:bg-white hover:border-white transition duration-500 px-7 py-2.5 cursor-pointer rounded-full inline-block mt-9">Start Live Stream</a>
+      </div>
+      <div class="col-span-3 lg:col-span-1 bg-slate-800 rounded-3xl p-8">
+        <ul>
+          <li class="border-b border-gray-700 pb-6 mb-6 text-gray-500">Games Downloaded<span class="float-right text-rose-600 font-semibold ">03</span></li>
+          <li class="border-b border-gray-700 pb-6 mb-6 text-gray-500">Friends Online<span class="float-right text-rose-600 font-semibold ">16</span></li>
+          <li class="border-b border-gray-700 pb-6 mb-6 text-gray-500">Live Streams<span class="float-right text-rose-600 font-semibold ">None</span></li>
+          <li class=" text-gray-500">Clips<span class="float-right text-rose-600 font-semibold ">29</span></li>
+        </ul>
+      </div>
+      </div>
+      <h1 class="not-italic text-rose-400  text-4xl font-bold">
+         <em class="not-italic text-white  underline ">Your Most Popular</em>
+       Clips
+      </h1>
+      <div class="grid grid-cols-4 gap-8 mt-14">
+      
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 px-4 py-8 bg-slate-800 rounded-3xl">
+          <div class="relative">
+            <img src="images/clip-01.jpg" class="w-full rounded-2xl">
+            <i class="fa-solid fa-play absolute text-rose-500 bg-white w-10 h-10 rounded-full text-center
+            lh-2r top-1/2 -translate-x-1/2 -translate-y-1/2  left-1/2 hover:bg-rose-500 hover:text-white transition duration-300"></i>
+          </div>
+          <h1 class="mt-3 font-bold text-white">First Clip 
+            <span class="float-right "><i class="fa-solid fa-eye text-rose-500"></i> 250</span>
+          </h1>
+        </div>
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 px-4 py-8 bg-slate-800 rounded-3xl">
+          <div class="relative">
+            <img src="images/clip-02.jpg" class="w-full rounded-2xl">
+            <i class="fa-solid fa-play absolute text-rose-500 bg-white w-10 h-10 rounded-full text-center
+            lh-2r top-1/2 -translate-x-1/2 -translate-y-1/2  left-1/2  hover:bg-rose-500 hover:text-white transition duration-300"></i>
+          </div>
+          <h1 class="mt-3 font-bold text-white">First Clip 
+            <span class="float-right "><i class="fa-solid fa-eye text-rose-500 "></i> 138</span>
+          </h1>
+        </div>
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 px-4 py-8 bg-slate-800 rounded-3xl">
+          <div class="relative">
+            <img src="images/clip-03.jpg" class="w-full rounded-2xl">
+            <i class="fa-solid fa-play absolute text-rose-500 bg-white w-10 h-10 rounded-full text-center
+            lh-2r top-1/2 -translate-x-1/2 -translate-y-1/2  left-1/2   hover:bg-rose-500 hover:text-white transition duration-300"></i>
+          </div>
+          <h1 class="mt-3 font-bold text-white">First Clip 
+            <span class="float-right "><i class="fa-solid fa-eye text-rose-500"></i> 141</span>
+          </h1>
+        </div>
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 px-4 py-8 bg-slate-800 rounded-3xl">
+          <div class="relative">
+            <img src="images/clip-04.jpg" class="w-full rounded-2xl">
+            <i class="fa-solid fa-play absolute text-rose-500 bg-white w-10 h-10 rounded-full text-center
+            lh-2r top-1/2 -translate-x-1/2 -translate-y-1/2  left-1/2  hover:bg-rose-500 hover:text-white transition duration-300"></i>
+          </div>
+          <h1 class="mt-3 font-bold text-white">First Clip 
+            <span class="float-right "><i class="fa-solid fa-eye text-rose-500"></i> 91</span>
+          </h1>
+        </div>
+      </div>
+      <div class=" text-center mt-8 mb-4  "><a href="" class="bg-rose-400 px-6 py-2.5 rounded-full text-white hover:bg-white hover:text-rose-400 transition duration-300"  >Load More Clips</a></div>
+     </div>
+     <div class="bg-gray-900 p-4 rounded-3xl mt-14  ">
+      <h1 class="not-italic text-rose-400  text-4xl font-bold">
+        <em class="not-italic text-white  underline ">Your Gaming</em>
+        Library
+     </h1>
+     <div class="my-5 border-b border-gray-500/20 pb-6 mt-10">
+      <ul class=" grid sm:space-y-6 lg:space-y-0  grid-cols-2 lg:grid-cols-6 	items-center">
+        <li class="col-span-2 md:col-span-1 mx-auto md:mx-0 "><img src="images/game-01.jpg" class="   rounded-2xl"></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Data 2 <br><span class="font-normal text-gray-700 ">Sand Box</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Date Added <br><span  class="font-normal text-gray-700 ">24/08/2036</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Hours Played <br><span  class="font-normal text-gray-700 ">634 H 22 Mins</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Currently <br><span  class="font-normal text-gray-700 ">Downloaded</span></h1></li>
+        <li class="col-span-2 md:col-span-1 mx-auto md:mx-0 "><button class="mt-5 md:mt-0 bg-slate-900 border-solid border-2 text-gray-500 font-bold inline-block  border-gray-500 px-8 py-3 rounded-3xl">DownLoaded</button></li>
+      </ul> 
+    </div>
+    <div class="my-5 border-b border-gray-500/20 pb-6 mt-10">
+      <ul class=" grid sm:space-y-6 lg:space-y-0  grid-cols-2 lg:grid-cols-6 	items-center">
+        <li class="col-span-2 md:col-span-1 mx-auto md:mx-0 "><img src="images/game-02.jpg" class="   rounded-2xl"></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Fortnite <br><span class="font-normal text-gray-700 ">Sand Box</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Date Added <br><span  class="font-normal text-gray-700 ">22/06/2036</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Hours Played <br><span  class="font-normal text-gray-700 ">634 H 22 Mins</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Currently <br><span  class="font-normal text-gray-700 ">Downloaded</span></h1></li>
+        <li class="col-span-2 md:col-span-1 mx-auto md:mx-0 "><button class="mt-5 md:mt-0 bg-slate-900 border-solid border-2 text-gray-500 font-bold inline-block  border-gray-500 px-8 py-3 rounded-3xl">DownLoaded</button></li>
+      </ul> 
+    </div>
+    <div class="my-5 border-b border-gray-500/20 pb-6 mt-10">
+      <ul class=" grid sm:space-y-6 lg:space-y-0  grid-cols-2 lg:grid-cols-6 	items-center">
+        <li class="col-span-2 md:col-span-1 mx-auto md:mx-0 "><img src="images/game-03.jpg" class="   rounded-2xl"></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">CS-GO <br><span class="font-normal text-gray-700 ">Sand Box</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Date Added <br><span  class="font-normal text-gray-700 ">24/08/2036</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Hours Played <br><span  class="font-normal text-gray-700 ">634 H 22 Mins</span></h1></li>
+        <li class="text-center"><h1 class="text-white font-bold sm:text-center md:text-left">Currently <br><span  class="font-normal text-gray-700 ">Downloaded</span></h1></li>
+        <li class="col-span-2 md:col-span-1 mx-auto md:mx-0 "><button class="mt-5 md:mt-0 bg-slate-900 border-solid border-2 text-gray-500 font-bold inline-block  border-gray-500 px-8 py-3 rounded-3xl">DownLoaded</button></li>
+      </ul>  
+    </div>
+     </div>
+  </section>
+     <!--section profile-->
+       <!--footer-->
+       <footer class=" p-7 text-center w-full bg-gray-900 text-white md:text-xl">
+        <p>Copyright © 2036 Cyborg Gaming Company. All rights reserved.</p>
+      </footer>
+      <!--footer-->
+      <script src="main.js"></script>
+      <script src="cyborg.js"></script>
+    </body>
+  </html>
+  
